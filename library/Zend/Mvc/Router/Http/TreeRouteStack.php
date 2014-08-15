@@ -146,7 +146,7 @@ class TreeRouteStack extends SimpleRouteStack
             }
 
             $chainRoutes = array_merge(array($specs), $specs['chain_routes']);
-            unset($chainRoutes[0]['chain_routes']);
+            unset($chainRoutes[0]);
 
             if (isset($specs['child_routes'])) {
                 unset($chainRoutes[0]['child_routes']);
